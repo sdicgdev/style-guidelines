@@ -1,3 +1,34 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](http://doctoc.herokuapp.com/)*
+
+- [General File Style](#general-file-style)
+  - [Indentation](#indentation)
+  - [Line Length](#line-length)
+  - [File Names](#file-names)
+  - [Line Breaks](#line-breaks)
+  - [charset](#charset)
+  - [Enforcement](#enforcement)
+    - [editorconfig plugin](#editorconfig-plugin)
+    - [linting](#linting)
+- [HTML](#html)
+  - [Quotation Marks](#quotation-marks)
+  - [File Names](#file-names-1)
+    - [Pages](#pages)
+    - [Templates](#templates)
+  - [Page Sections](#page-sections)
+  - [Comments](#comments)
+  - [Line Lengths](#line-lengths)
+- [CSS](#css)
+  - [File Names](#file-names-2)
+- [Javascript](#javascript)
+  - [File Names](#file-names-3)
+- [Angular](#angular)
+  - [File Names](#file-names-4)
+- [PHP](#php)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # General File Style
 
 ## Indentation
