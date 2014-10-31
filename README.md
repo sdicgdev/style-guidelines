@@ -295,6 +295,164 @@ do not use combo attributes with font-related rules
 
 # Javascript
 
+## If ... Else
+
+ if ($a === $b) {
+    bar();
+} elseif ($a > $b) {
+    $foo->bar($arg1);
+} else {
+    BazClass::bar($arg2, $arg3);
+}
+
+## Array definitions
+
+## Function definitions
+
+## Namespacing
+
+## This new thing
+
+The closing ?> tag MUST be omitted from files containing only PHP.
+
+NO trailing whitespace
+
+OOP based files
+<?php namespace Whatever
+
+?>
+
+non-OOP files
+<?php
+
+?>
+
+<?= shortcut ?> is on
+
+## Booleans
+
+all caps TRUE, FALSE, NULL
+
+## variable names
+
+$vars_are_underscore
+
+function snakeCaseNotUnderscore ($arg1, $arg2 = NULL) {
+	
+}
+
+class NamesAreCamelCased
+
+$var_name = array();
+$var_name['one'] = "two";
+$var_name['two'] = "three";
+
+$var_name = array(
+	'key' => "value",
+	'key2' => 35
+);
+
+array definitions should not be included in function calls
+
+BAD:
+
+	functionToCall(array('one'=>"two"), 'whatever')
+
+GOOD:
+
+	$ray = array(
+		'one'=>"two"
+	);
+
+	functionToCall($ray, 'whatever');
+
+SQL Queries
+
+$query = "
+	SELECT
+	  one
+	, two
+	, three
+	FROM
+	  whatever
+	WHERE thing = 'this'
+	AND   thing = 'that' 
+";
+
+NO JOINS (unless you really actually need one... no joins)
+
+$query = "
+	SELECT
+	  one
+	, two
+	, three
+	, ambiguous.four
+	FROM
+	  whatever
+	LEFT OUTER JOIN
+	  table 
+	ON always.thing = always.other_thing 
+	WHERE thing = 'this'
+	AND   thing = 'that' 
+";
+
+## Casting
+
+(int) $mynumber
+
+switch (condition) {
+  case 1:
+    action1;
+    break;
+  case 2:
+    action2;
+    break;
+  default:
+    defaultaction;
+}
+
+break not required, but very much encouraged
+
+Preferred:
+$short         = foo($bar);
+$long_variable = foo($baz);
+
+$doThis = functionCall(arg);
+$var = "$this is {$a->preferred} way to $doThis";
+
+$var = new \stdClass();
+
+$var::func_call();
+
+$var->func_call();
+
+http://blog.lmorchard.com/2013/01/23/naming-conventions/
+
+[css lowercase hex]
+
+line breaks between functions
+
+function () {
+	
+}
+[line intentionally left blank]
+/**
+  *
+  * this is required for apigen
+  * 
+  * @params String - description of param
+  * @author Evan Short
+  * @since 10-31-14
+  */
+function thingToDo () {
+	// this is what's happening
+	...stuff happening here...
+
+	// things happening
+	...more things...
+}
+
+
 ## File Names
 
 # Angular
