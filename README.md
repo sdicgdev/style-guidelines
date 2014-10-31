@@ -153,18 +153,132 @@ or included files have a special naming requirements
 a "page" is defined as any html file that has a `<head></head>` section. Should
 be named as normal
 
-e.g. file-name.html
+e.g. `file-name.html`
 
 ### Templates
 
 a "template" is defined as any html file that does not have a `<head></head>`
 section. Should be named starting with an underscore.
 
-e.g. _file-name.html
+e.g. `_file-name.html`
 
 # CSS
 
-## File Names
+## Rule Names
+
+Long names should be delmited with dashes
+
+e.g.
+
+	.long-style-name {
+		...
+	}
+
+## Semantic Naming
+
+Class and ID names should have an obvious meaning that applies to their place,
+function, or position on the page, as the item's use case dictates
+
+## Rule Definition Format
+
+### Multiline only
+
+There should be no one line rule definitions, no matter how simple
+
+e.g.
+
+Bad: 
+
+	.style-name { color: '#ffffff'; }
+
+Good:
+
+	.style-name {
+		color: '#ffffff';
+	}
+
+### One expression per line
+
+e.g.
+
+Bad:
+
+	.style-name {
+		color: #333333; background: #ffffff;
+	}
+
+Good:
+
+	.style-name {
+		color: #333333;
+		background: #ffffff;
+	}
+
+### All lines end with semicolon
+
+e.g.
+
+Bad:
+
+	.style-name {
+		color: #333333
+	}
+
+Good:
+
+	.style-name {
+		color: #333333;
+	}
+
+### Space after rule name
+
+A space should exist between the rule name and the opening bracket, which
+should be on the same line as the rule name
+
+e.g.
+
+Bad:
+
+	.style-name{
+		...
+	}
+
+Bad
+	
+	.style-name
+	{
+		...
+	}
+
+Good
+
+	.style-name {
+		...
+	}
+
+## Quotation Marks
+
+All attributes should be defined with single quotes where quotes are required
+
+## Class and ID naming conventions
+
+Classes and IDs should be named with dashes for long items
+
+e.g. `.my-custom-class` or `#my-custom-id`
+
+## Color Definitions
+
+All HEX definitions should be 6 characters long. 
+
+If rgba definitions are required, a HEX definition should preceed it
+
+## Combination Attributes
+
+Combination attributes should be used where possible (border, background,
+margin, padding). Single margin/padding definitions should be used only 
+to override predefined rules
+
+do not use combo attributes with font-related rules
 
 # Javascript
 
