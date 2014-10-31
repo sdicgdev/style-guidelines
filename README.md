@@ -80,6 +80,7 @@ to any lint-checked formatting requirement
 All quotation marks used in attribute definitions should be double quotes
 
 e.g.
+
 	<a href="http://example.org">example link</a>
 
 ## Attribute Ordering
@@ -101,6 +102,7 @@ Element definitions that exceed the 80 character line length should be broken
 up by stacking the element's attributes
 
 e.g.
+
 	<input
 		id    = "test-id"
 		class = "test-class"
