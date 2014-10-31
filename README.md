@@ -150,14 +150,14 @@ or included files have a special naming requirements
 
 ### Pages
 
-a "page" is defined as any html file that has a +<head></head>+ section. Should
+a "page" is defined as any html file that has a `<head></head>` section. Should
 be named as normal
 
 e.g. file-name.html
 
 ### Templates
 
-a "template" is defined as any html file that does not have a +<head></head>+
+a "template" is defined as any html file that does not have a `<head></head>`
 section. Should be named starting with an underscore.
 
 e.g. _file-name.html
