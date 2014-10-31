@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <title>Style-guidelines by sdicgdev</title>
+  </head>
+
+  <body>
+    <div id="container">
+      <div class="inner">
+
+        <header>
+          <h1>Style-guidelines</h1>
+          <h2>Guidelines for naming and formatting files for a more unified style across projects</h2>
+        </header>
+
+        <section id="downloads" class="clearfix">
+          <a href="https://github.com/sdicgdev/style-guidelines/zipball/master" id="download-zip" class="button"><span>Download .zip</span></a>
+          <a href="https://github.com/sdicgdev/style-guidelines/tarball/master" id="download-tar-gz" class="button"><span>Download .tar.gz</span></a>
+          <a href="https://github.com/sdicgdev/style-guidelines" id="view-on-github" class="button"><span>View on GitHub</span></a>
+        </section>
+
+        <hr>
+
+        <section id="main_content">
+          
+
+
+
+<ul>
+<li>
+<a href="#general-file-style">General File Style</a>
+
+<ul>
+<li><a href="#indentation">Indentation</a></li>
+<li><a href="#line-length">Line Length</a></li>
+<li><a href="#file-names">File Names</a></li>
+<li><a href="#line-breaks">Line Breaks</a></li>
+<li><a href="#charset">charset</a></li>
+<li>
+<a href="#enforcement">Enforcement</a>
+
+<ul>
+<li><a href="#editorconfig-plugin">editorconfig plugin</a></li>
+<li><a href="#linting">linting</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<a href="#html">HTML</a>
+
+<ul>
+<li><a href="#quotation-marks">Quotation Marks</a></li>
+<li>
+<a href="#file-names-1">File Names</a>
+
+<ul>
+<li><a href="#pages">Pages</a></li>
+<li><a href="#templates">Templates</a></li>
+</ul>
+</li>
+<li><a href="#page-sections">Page Sections</a></li>
+<li><a href="#comments">Comments</a></li>
+<li><a href="#line-lengths">Line Lengths</a></li>
+</ul>
+</li>
+<li>
+<a href="#css">CSS</a>
+
+<ul>
+<li><a href="#file-names-2">File Names</a></li>
+</ul>
+</li>
+<li>
+<a href="#javascript">Javascript</a>
+
+<ul>
+<li><a href="#file-names-3">File Names</a></li>
+</ul>
+</li>
+<li>
+<a href="#angular">Angular</a>
+
+<ul>
+<li><a href="#file-names-4">File Names</a></li>
+</ul>
+</li>
+<li><a href="#php">PHP</a></li>
+</ul>
+
+
+
+<h1>
+<a name="general-file-style" class="anchor" href="#general-file-style"><span class="octicon octicon-link"></span></a>General File Style</h1>
+
+<h2>
+<a name="indentation" class="anchor" href="#indentation"><span class="octicon octicon-link"></span></a>Indentation</h2>
+
+<pre><code>Soft Tabs, 2 spaces
+</code></pre>
+
+<h2>
+<a name="line-length" class="anchor" href="#line-length"><span class="octicon octicon-link"></span></a>Line Length</h2>
+
+<pre><code>80 characters max
+</code></pre>
+
+<h2>
+<a name="file-names" class="anchor" href="#file-names"><span class="octicon octicon-link"></span></a>File Names</h2>
+
+<pre><code>dashes for separating long file names
+
+e.g. long-file-name.html
+</code></pre>
+
+<h2>
+<a name="line-breaks" class="anchor" href="#line-breaks"><span class="octicon octicon-link"></span></a>Line Breaks</h2>
+
+<pre><code>unix style carriage return line endings (i.e. \r)
+</code></pre>
+
+<h2>
+<a name="charset" class="anchor" href="#charset"><span class="octicon octicon-link"></span></a>charset</h2>
+
+<pre><code>utf-8
+</code></pre>
+
+<h2>
+<a name="enforcement" class="anchor" href="#enforcement"><span class="octicon octicon-link"></span></a>Enforcement</h2>
+
+<pre><code>In many cases, maintaining proper code style is a function of the developer
+and code reviewer. However, where possible, automated processes should manage 
+enforcement
+</code></pre>
+
+<h3>
+<a name="editorconfig-plugin" class="anchor" href="#editorconfig-plugin"><span class="octicon octicon-link"></span></a>editorconfig plugin</h3>
+
+<pre><code>we use the editorconfig plugin project to support many browsers. Please
+install [the plugin](http://editorconfig.org/#download "the editorconfig
+project") to the supported editor of your choice
+
+and then install the sdicg editorconfig file 
+</code></pre>
+
+<h3>
+<a name="linting" class="anchor" href="#linting"><span class="octicon octicon-link"></span></a>linting</h3>
+
+<pre><code>where possible, code requirements should be managed by a linting project
+
+it should not be possible to submit code to a repository that does not conform
+to any lint-checked formatting requirement
+</code></pre>
+
+<h1>
+<a name="html" class="anchor" href="#html"><span class="octicon octicon-link"></span></a>HTML</h1>
+
+<h2>
+<a name="quotation-marks" class="anchor" href="#quotation-marks"><span class="octicon octicon-link"></span></a>Quotation Marks</h2>
+
+<h2>
+<a name="file-names-1" class="anchor" href="#file-names-1"><span class="octicon octicon-link"></span></a>File Names</h2>
+
+<h3>
+<a name="pages" class="anchor" href="#pages"><span class="octicon octicon-link"></span></a>Pages</h3>
+
+<h3>
+<a name="templates" class="anchor" href="#templates"><span class="octicon octicon-link"></span></a>Templates</h3>
+
+<h2>
+<a name="page-sections" class="anchor" href="#page-sections"><span class="octicon octicon-link"></span></a>Page Sections</h2>
+
+<h2>
+<a name="comments" class="anchor" href="#comments"><span class="octicon octicon-link"></span></a>Comments</h2>
+
+<h2>
+<a name="line-lengths" class="anchor" href="#line-lengths"><span class="octicon octicon-link"></span></a>Line Lengths</h2>
+
+<h1>
+<a name="css" class="anchor" href="#css"><span class="octicon octicon-link"></span></a>CSS</h1>
+
+<h2>
+<a name="file-names-2" class="anchor" href="#file-names-2"><span class="octicon octicon-link"></span></a>File Names</h2>
+
+<h1>
+<a name="javascript" class="anchor" href="#javascript"><span class="octicon octicon-link"></span></a>Javascript</h1>
+
+<h2>
+<a name="file-names-3" class="anchor" href="#file-names-3"><span class="octicon octicon-link"></span></a>File Names</h2>
+
+<h1>
+<a name="angular" class="anchor" href="#angular"><span class="octicon octicon-link"></span></a>Angular</h1>
+
+<h2>
+<a name="file-names-4" class="anchor" href="#file-names-4"><span class="octicon octicon-link"></span></a>File Names</h2>
+
+<h1>
+<a name="php" class="anchor" href="#php"><span class="octicon octicon-link"></span></a>PHP</h1>
+        </section>
+
+        <footer>
+          Style-guidelines is maintained by <a href="https://github.com/sdicgdev">sdicgdev</a><br>
+          This page was generated by <a href="http://pages.github.com">GitHub Pages</a>. Tactile theme by <a href="https://twitter.com/jasonlong">Jason Long</a>.
+        </footer>
+
+        
+      </div>
+    </div>
+  </body>
+</html>
