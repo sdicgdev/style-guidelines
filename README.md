@@ -41,7 +41,8 @@ Soft Tabs, 2 spaces
 
 dashes for separating long file names
 
-e.g. long-file-name.html
+e.g.
+	long-file-name.html
 
 ## Line Breaks
 
