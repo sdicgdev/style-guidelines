@@ -60,6 +60,11 @@
 
 <ul>
 <li><a href="#quotation-marks">Quotation Marks</a></li>
+<li><a href="#attribute-ordering">Attribute Ordering</a></li>
+<li><a href="#inline-styles">Inline Styles</a></li>
+<li><a href="#line-lengths">Line Lengths</a></li>
+<li><a href="#page-sections">Page Sections</a></li>
+<li><a href="#comments">Comments</a></li>
 <li>
 <a href="#file-names-1">File Names</a>
 
@@ -68,30 +73,42 @@
 <li><a href="#templates">Templates</a></li>
 </ul>
 </li>
-<li><a href="#page-sections">Page Sections</a></li>
-<li><a href="#comments">Comments</a></li>
-<li><a href="#line-lengths">Line Lengths</a></li>
 </ul>
 </li>
 <li>
 <a href="#css">CSS</a>
 
 <ul>
-<li><a href="#file-names-2">File Names</a></li>
+<li><a href="#rule-names">Rule Names</a></li>
+<li><a href="#semantic-naming">Semantic Naming</a></li>
+<li>
+<a href="#rule-definition-format">Rule Definition Format</a>
+
+<ul>
+<li><a href="#multiline-only">Multiline only</a></li>
+<li><a href="#one-expression-per-line">One expression per line</a></li>
+<li><a href="#all-lines-end-with-semicolon">All lines end with semicolon</a></li>
+<li><a href="#space-after-rule-name">Space after rule name</a></li>
+</ul>
+</li>
+<li><a href="#quotation-marks-1">Quotation Marks</a></li>
+<li><a href="#class-and-id-naming-conventions">Class and ID naming conventions</a></li>
+<li><a href="#color-definitions">Color Definitions</a></li>
+<li><a href="#combination-attributes">Combination Attributes</a></li>
 </ul>
 </li>
 <li>
 <a href="#javascript">Javascript</a>
 
 <ul>
-<li><a href="#file-names-3">File Names</a></li>
+<li><a href="#file-names-2">File Names</a></li>
 </ul>
 </li>
 <li>
 <a href="#angular">Angular</a>
 
 <ul>
-<li><a href="#file-names-4">File Names</a></li>
+<li><a href="#file-names-3">File Names</a></li>
 </ul>
 </li>
 <li><a href="#php">PHP</a></li>
@@ -162,8 +179,10 @@ to any lint-checked formatting requirement</p>
 
 <p>All quotation marks used in attribute definitions should be double quotes</p>
 
-<p>e.g.
-    <a href="http://example.org">example link</a></p>
+<p>e.g.</p>
+
+<pre><code>&lt;a href="http://example.org"&gt;example link&lt;/a&gt;
+</code></pre>
 
 <h2>
 <a name="attribute-ordering" class="anchor" href="#attribute-ordering"><span class="octicon octicon-link"></span></a>Attribute Ordering</h2>
@@ -188,8 +207,13 @@ to any lint-checked formatting requirement</p>
 <p>Element definitions that exceed the 80 character line length should be broken
 up by stacking the element's attributes</p>
 
-<p>e.g.
-    </p>
+<p>e.g.</p>
+
+<pre><code>&lt;input
+    id    = "test-id"
+    class = "test-class"
+    type  = "text" /&gt;
+</code></pre>
 
 <h2>
 <a name="page-sections" class="anchor" href="#page-sections"><span class="octicon octicon-link"></span></a>Page Sections</h2>
@@ -240,36 +264,170 @@ or included files have a special naming requirements </p>
 <h3>
 <a name="pages" class="anchor" href="#pages"><span class="octicon octicon-link"></span></a>Pages</h3>
 
-<p>a "page" is defined as any html file that has a </p> section. Should
-be named as normal
+<p>a "page" is defined as any html file that has a <code>&lt;head&gt;&lt;/head&gt;</code> section. Should
+be named as normal</p>
 
-<p>e.g. file-name.html</p>
+<p>e.g. <code>file-name.html</code></p>
 
 <h3>
 <a name="templates" class="anchor" href="#templates"><span class="octicon octicon-link"></span></a>Templates</h3>
 
-<p>a "template" is defined as any html file that does not have a </p>
-section. Should be named starting with an underscore.
+<p>a "template" is defined as any html file that does not have a <code>&lt;head&gt;&lt;/head&gt;</code>
+section. Should be named starting with an underscore.</p>
 
-<p>e.g. _file-name.html</p>
+<p>e.g. <code>_file-name.html</code></p>
 
 <h1>
 <a name="css" class="anchor" href="#css"><span class="octicon octicon-link"></span></a>CSS</h1>
 
 <h2>
-<a name="file-names-2" class="anchor" href="#file-names-2"><span class="octicon octicon-link"></span></a>File Names</h2>
+<a name="rule-names" class="anchor" href="#rule-names"><span class="octicon octicon-link"></span></a>Rule Names</h2>
+
+<p>Long names should be delmited with dashes</p>
+
+<p>e.g.</p>
+
+<pre><code>.long-style-name {
+    ...
+}
+</code></pre>
+
+<h2>
+<a name="semantic-naming" class="anchor" href="#semantic-naming"><span class="octicon octicon-link"></span></a>Semantic Naming</h2>
+
+<p>Class and ID names should have an obvious meaning that applies to their place,
+function, or position on the page, as the item's use case dictates</p>
+
+<h2>
+<a name="rule-definition-format" class="anchor" href="#rule-definition-format"><span class="octicon octicon-link"></span></a>Rule Definition Format</h2>
+
+<h3>
+<a name="multiline-only" class="anchor" href="#multiline-only"><span class="octicon octicon-link"></span></a>Multiline only</h3>
+
+<p>There should be no one line rule definitions, no matter how simple</p>
+
+<p>e.g.</p>
+
+<p>Bad: </p>
+
+<pre><code>.style-name { color: '#ffffff'; }
+</code></pre>
+
+<p>Good:</p>
+
+<pre><code>.style-name {
+    color: '#ffffff';
+}
+</code></pre>
+
+<h3>
+<a name="one-expression-per-line" class="anchor" href="#one-expression-per-line"><span class="octicon octicon-link"></span></a>One expression per line</h3>
+
+<p>e.g.</p>
+
+<p>Bad:</p>
+
+<pre><code>.style-name {
+    color: #333333; background: #ffffff;
+}
+</code></pre>
+
+<p>Good:</p>
+
+<pre><code>.style-name {
+    color: #333333;
+    background: #ffffff;
+}
+</code></pre>
+
+<h3>
+<a name="all-lines-end-with-semicolon" class="anchor" href="#all-lines-end-with-semicolon"><span class="octicon octicon-link"></span></a>All lines end with semicolon</h3>
+
+<p>e.g.</p>
+
+<p>Bad:</p>
+
+<pre><code>.style-name {
+    color: #333333
+}
+</code></pre>
+
+<p>Good:</p>
+
+<pre><code>.style-name {
+    color: #333333;
+}
+</code></pre>
+
+<h3>
+<a name="space-after-rule-name" class="anchor" href="#space-after-rule-name"><span class="octicon octicon-link"></span></a>Space after rule name</h3>
+
+<p>A space should exist between the rule name and the opening bracket, which
+should be on the same line as the rule name</p>
+
+<p>e.g.</p>
+
+<p>Bad:</p>
+
+<pre><code>.style-name{
+    ...
+}
+</code></pre>
+
+<p>Bad</p>
+
+<pre><code>.style-name
+{
+    ...
+}
+</code></pre>
+
+<p>Good</p>
+
+<pre><code>.style-name {
+    ...
+}
+</code></pre>
+
+<h2>
+<a name="quotation-marks-1" class="anchor" href="#quotation-marks-1"><span class="octicon octicon-link"></span></a>Quotation Marks</h2>
+
+<p>All attributes should be defined with single quotes where quotes are required</p>
+
+<h2>
+<a name="class-and-id-naming-conventions" class="anchor" href="#class-and-id-naming-conventions"><span class="octicon octicon-link"></span></a>Class and ID naming conventions</h2>
+
+<p>Classes and IDs should be named with dashes for long items</p>
+
+<p>e.g. <code>.my-custom-class</code> or <code>#my-custom-id</code></p>
+
+<h2>
+<a name="color-definitions" class="anchor" href="#color-definitions"><span class="octicon octicon-link"></span></a>Color Definitions</h2>
+
+<p>All HEX definitions should be 6 characters long. </p>
+
+<p>If rgba definitions are required, a HEX definition should preceed it</p>
+
+<h2>
+<a name="combination-attributes" class="anchor" href="#combination-attributes"><span class="octicon octicon-link"></span></a>Combination Attributes</h2>
+
+<p>Combination attributes should be used where possible (border, background,
+margin, padding). Single margin/padding definitions should be used only 
+to override predefined rules</p>
+
+<p>do not use combo attributes with font-related rules</p>
 
 <h1>
 <a name="javascript" class="anchor" href="#javascript"><span class="octicon octicon-link"></span></a>Javascript</h1>
 
 <h2>
-<a name="file-names-3" class="anchor" href="#file-names-3"><span class="octicon octicon-link"></span></a>File Names</h2>
+<a name="file-names-2" class="anchor" href="#file-names-2"><span class="octicon octicon-link"></span></a>File Names</h2>
 
 <h1>
 <a name="angular" class="anchor" href="#angular"><span class="octicon octicon-link"></span></a>Angular</h1>
 
 <h2>
-<a name="file-names-4" class="anchor" href="#file-names-4"><span class="octicon octicon-link"></span></a>File Names</h2>
+<a name="file-names-3" class="anchor" href="#file-names-3"><span class="octicon octicon-link"></span></a>File Names</h2>
 
 <h1>
 <a name="php" class="anchor" href="#php"><span class="octicon octicon-link"></span></a>PHP</h1>
