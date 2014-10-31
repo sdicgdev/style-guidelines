@@ -105,61 +105,54 @@
 <h2>
 <a name="indentation" class="anchor" href="#indentation"><span class="octicon octicon-link"></span></a>Indentation</h2>
 
-<pre><code>Soft Tabs, 2 spaces
-</code></pre>
+<p>Soft Tabs, 2 spaces</p>
 
 <h2>
 <a name="line-length" class="anchor" href="#line-length"><span class="octicon octicon-link"></span></a>Line Length</h2>
 
-<pre><code>80 characters max
-</code></pre>
+<p>80 characters max</p>
 
 <h2>
 <a name="file-names" class="anchor" href="#file-names"><span class="octicon octicon-link"></span></a>File Names</h2>
 
-<pre><code>dashes for separating long file names
+<p>dashes for separating long file names</p>
 
-e.g. long-file-name.html
-</code></pre>
+<p>e.g.
+    long-file-name.html</p>
 
 <h2>
 <a name="line-breaks" class="anchor" href="#line-breaks"><span class="octicon octicon-link"></span></a>Line Breaks</h2>
 
-<pre><code>unix style carriage return line endings (i.e. \r)
-</code></pre>
+<p>unix style carriage return line endings (i.e. \r)</p>
 
 <h2>
 <a name="charset" class="anchor" href="#charset"><span class="octicon octicon-link"></span></a>charset</h2>
 
-<pre><code>utf-8
-</code></pre>
+<p>utf-8</p>
 
 <h2>
 <a name="enforcement" class="anchor" href="#enforcement"><span class="octicon octicon-link"></span></a>Enforcement</h2>
 
-<pre><code>In many cases, maintaining proper code style is a function of the developer
+<p>In many cases, maintaining proper code style is a function of the developer
 and code reviewer. However, where possible, automated processes should manage 
-enforcement
-</code></pre>
+enforcement</p>
 
 <h3>
 <a name="editorconfig-plugin" class="anchor" href="#editorconfig-plugin"><span class="octicon octicon-link"></span></a>editorconfig plugin</h3>
 
-<pre><code>we use the editorconfig plugin project to support many browsers. Please
-install [the plugin](http://editorconfig.org/#download "the editorconfig
-project") to the supported editor of your choice
+<p>we use the editorconfig plugin project to support many browsers. Please
+install <a href="http://editorconfig.org/#download" title="the editorconfig
+project">the plugin</a> to the supported editor of your choice</p>
 
-and then install the sdicg editorconfig file 
-</code></pre>
+<p>and then install the sdicg editorconfig file </p>
 
 <h3>
 <a name="linting" class="anchor" href="#linting"><span class="octicon octicon-link"></span></a>linting</h3>
 
-<pre><code>where possible, code requirements should be managed by a linting project
+<p>where possible, code requirements should be managed by a linting project</p>
 
-it should not be possible to submit code to a repository that does not conform
-to any lint-checked formatting requirement
-</code></pre>
+<p>it should not be possible to submit code to a repository that does not conform
+to any lint-checked formatting requirement</p>
 
 <h1>
 <a name="html" class="anchor" href="#html"><span class="octicon octicon-link"></span></a>HTML</h1>
@@ -167,23 +160,98 @@ to any lint-checked formatting requirement
 <h2>
 <a name="quotation-marks" class="anchor" href="#quotation-marks"><span class="octicon octicon-link"></span></a>Quotation Marks</h2>
 
+<p>All quotation marks used in attribute definitions should be double quotes</p>
+
+<p>e.g.
+    <a href="http://example.org">example link</a></p>
+
 <h2>
-<a name="file-names-1" class="anchor" href="#file-names-1"><span class="octicon octicon-link"></span></a>File Names</h2>
+<a name="attribute-ordering" class="anchor" href="#attribute-ordering"><span class="octicon octicon-link"></span></a>Attribute Ordering</h2>
 
-<h3>
-<a name="pages" class="anchor" href="#pages"><span class="octicon octicon-link"></span></a>Pages</h3>
+<p>The order is as follows:</p>
 
-<h3>
-<a name="templates" class="anchor" href="#templates"><span class="octicon octicon-link"></span></a>Templates</h3>
+<ul>
+<li>required tags (e.g. the anchor tag's "href" or img tag's "src")</li>
+<li>id</li>
+<li>class</li>
+<li>standard html attributes (e.g. </li>
+</ul>
+
+<h2>
+<a name="inline-styles" class="anchor" href="#inline-styles"><span class="octicon octicon-link"></span></a>Inline Styles</h2>
+
+<p>Inline styles should be avoided except where absolutely necessary</p>
+
+<h2>
+<a name="line-lengths" class="anchor" href="#line-lengths"><span class="octicon octicon-link"></span></a>Line Lengths</h2>
+
+<p>Element definitions that exceed the 80 character line length should be broken
+up by stacking the element's attributes</p>
+
+<p>e.g.
+    </p>
 
 <h2>
 <a name="page-sections" class="anchor" href="#page-sections"><span class="octicon octicon-link"></span></a>Page Sections</h2>
 
+<p>Page sections should be delimited by comments. What is a "section" is left to
+the discression of the developer. </p>
+
+<p>Section comments should abide by the following formaty</p>
+
 <h2>
 <a name="comments" class="anchor" href="#comments"><span class="octicon octicon-link"></span></a>Comments</h2>
 
+<p>Comments should be used reasonably liberally to describe the purpose of any 
+non-obvious design or functionality. Comments should exist on their own lines.</p>
+
+<p>e.g.</p>
+
+<p>Bad:</p>
+
+<pre><code>&lt;div&gt; &lt;!-- here is a comment about this div --&gt;
+    ...
+&lt;/div&gt;
+</code></pre>
+
+<p>Good</p>
+
+<pre><code>&lt;!-- here is a comment about this div --&gt;
+&lt;div&gt; 
+    ...
+&lt;/div&gt;
+</code></pre>
+
+<p>Multiline comments should be formatted as follows</p>
+
+<pre><code>&lt;!--
+    this is a multiline comment
+
+    note the tab indentation after the comment's start
+--&gt;
+</code></pre>
+
 <h2>
-<a name="line-lengths" class="anchor" href="#line-lengths"><span class="octicon octicon-link"></span></a>Line Lengths</h2>
+<a name="file-names-1" class="anchor" href="#file-names-1"><span class="octicon octicon-link"></span></a>File Names</h2>
+
+<p>file names should abide by the general naming principle, except that template
+or included files have a special naming requirements </p>
+
+<h3>
+<a name="pages" class="anchor" href="#pages"><span class="octicon octicon-link"></span></a>Pages</h3>
+
+<p>a "page" is defined as any html file that has a </p> section. Should
+be named as normal
+
+<p>e.g. file-name.html</p>
+
+<h3>
+<a name="templates" class="anchor" href="#templates"><span class="octicon octicon-link"></span></a>Templates</h3>
+
+<p>a "template" is defined as any html file that does not have a </p>
+section. Should be named starting with an underscore.
+
+<p>e.g. _file-name.html</p>
 
 <h1>
 <a name="css" class="anchor" href="#css"><span class="octicon octicon-link"></span></a>CSS</h1>
